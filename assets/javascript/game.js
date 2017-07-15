@@ -12,10 +12,10 @@ $(document).ready(function() {
     console.log(numOptions);
     console.log(buttonImg.length);
     console.log(buttonImg);
+
+    var random = getRandomInteger(19, 121);
     console.log(random);
     console.log(typeof random);
-    var random = getRandomInteger(19, 121);
-
 
     // for when page loads all random #'s are on the page 
     $("#answer").html(random);
