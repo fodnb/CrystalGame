@@ -98,7 +98,7 @@ startGame();
     // the game then adds that number to the current count
   
 function clicking(){
-    $(".images").on("click", function() {
+    $("img.images").on("click", function() {
          $(this).animate({ opacity: "0.75" });
          $(this).animate({ opacity: "0.95" });
          $(this).animate({ opacity: "0.75" });
@@ -116,13 +116,13 @@ function clicking(){
         if (counter === random) {
             wins++;
             console.log(wins);
-            $("#wins").html("Wins: " + wins);
+            $("h4#wins").html("Wins: " + wins);
             // document.getElementById("wins").innerHTML = "Wins: " + wins;
             startGame();
         } else if (counter > random) {
             losses++;
             console.log(losses);
-            $("#losses").html("Losses: " + losses);
+            $("h4#losses").html("Losses: " + losses);
             // document.getElementById("losses").innerHTML = "Losses: " + losses;
             startGame();
         }
