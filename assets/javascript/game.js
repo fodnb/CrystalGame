@@ -26,7 +26,6 @@ $(document).ready(function() {
     function getRandomInteger(min, max) {
         var randomN = Math.floor(Math.random() * (max - min)) + min;
         return randomN;
-        console.log(randomN);
     }
 
 
@@ -128,7 +127,7 @@ function clicking(){
         }
 
  });
-}
+}   
 
 
 
